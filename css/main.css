@@ -20,6 +20,7 @@ a:visited {
   color: #3897f0;
 }
 .content {
+  position: relative;
   margin: 80px auto;
   width: 100%;
   max-width: 935px;
@@ -111,8 +112,10 @@ a:visited {
   font-size: 12px;
 }
 .slideshow {
-  float: left;
-  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -309px;
 }
 .slideshow .phone {
   position: relative;
@@ -133,8 +136,9 @@ a:visited {
   left: 0;
 }
 .authentication {
-  float: left;
+  display: inline-block;
   max-width: 350px;
+  margin-left: 50%;
 }
 .authentication .logo {
   width: 175px;
@@ -157,7 +161,7 @@ a:visited {
 .authentication form .form-element input {
   display: block;
   width: 100%;
-  padding: 9px 8px 7px;
+  padding: 8px 8px 7px;
   border: 1px solid #dbdbdb;
   border-radius: 3px;
   color: #262626;
@@ -166,6 +170,42 @@ a:visited {
   font-weight: 300;
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
+}
+.authentication form .form-element.error {
+  position: relative;
+}
+.authentication form .form-element.error::after {
+  content: '';
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 22px;
+  height: 22px;
+  background-image: url('../img/sprite.png');
+  background-position: -50px -286px;
+  pointer-events: none;
+}
+.authentication form .form-element.accepted {
+  position: relative;
+}
+.authentication form .form-element.accepted::after {
+  content: '';
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 22px;
+  height: 22px;
+  background-image: url('../img/sprite.png');
+  background-position: -74px -286px;
+  pointer-events: none;
+}
+.authentication form .error-message {
+  display: none;
+  color: #ed4956;
+  margin: 0 0 10px;
+}
+.authentication form.error .error-message {
+  display: block;
 }
 .authentication .terms {
   color: #999;

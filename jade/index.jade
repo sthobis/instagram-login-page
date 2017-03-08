@@ -13,6 +13,7 @@ html
     link(rel="shortcut icon" type="images/x-icon" href="img/favicon.ico")
     // stylesheets
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400")
+    link(rel="stylesheet" href="css/igslider.css")
     link(rel="stylesheet" href="css/main.css")
 
   body
@@ -23,11 +24,12 @@ html
         .phone
           .screens
             img(src="img/screen-1.jpg" alt="screen").screen
-            img(src="img/screen-1.jpg" alt="screen").screen
+            img(src="img/screen-2.jpg" alt="screen").screen
+            img(src="img/screen-3.jpg" alt="screen").screen
 
       section.authentication
         .box
-          form
+          form(action="http://google.com")
             h1.logo
             h2.description Sign up to see photos and videos from your friends.
             button.btn-blue.fb Log in with Facebook
@@ -36,14 +38,15 @@ html
               span.text or
               span.stripe
             .form-element.mobile
-              input(type="number" placeholder="Mobile Number or Email")
+              input(type="number" placeholder="Mobile Number or Email" required)
             .form-element.fullname
-              input(type="text" placeholder="Full Name")
+              input(type="text" placeholder="Full Name" required)
             .form-element.username
-              input(type="text" placeholder="Username")
+              input(type="text" placeholder="Username" required)
             .form-element.password
-              input(type="text" placeholder="Password")
+              input(type="text" placeholder="Password" required)
             button.btn-blue Sign up
+            .error-message
             .terms
               p By signing up, you agree to our
               a(href="#") Terms
@@ -88,4 +91,5 @@ html
 
   // scripts
   script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
-  script(src="main.js")
+  script(src="js/igslider.js")
+  script(src="js/main.js")

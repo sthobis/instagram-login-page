@@ -9,35 +9,37 @@
     <link rel="shortcut icon" type="images/x-icon" href="img/favicon.ico">
     <!-- stylesheets-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400">
+    <link rel="stylesheet" href="css/igslider.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <div role="main" class="content">
       <section class="slideshow">
         <div class="phone">
-          <div class="screens"><img src="img/screen-1.jpg" alt="screen" class="screen"><img src="img/screen-1.jpg" alt="screen" class="screen"></div>
+          <div class="screens"><img src="img/screen-1.jpg" alt="screen" class="screen"><img src="img/screen-2.jpg" alt="screen" class="screen"><img src="img/screen-3.jpg" alt="screen" class="screen"></div>
         </div>
       </section>
       <section class="authentication">
         <div class="box">
-          <form>
+          <form action="http://google.com">
             <h1 class="logo"></h1>
             <h2 class="description">Sign up to see photos and videos from your friends.</h2>
             <button class="btn-blue fb">Log in with Facebook</button>
             <div class="separator"><span class="stripe"></span><span class="text">or</span><span class="stripe"></span></div>
             <div class="form-element mobile">
-              <input type="number" placeholder="Mobile Number or Email">
+              <input type="number" placeholder="Mobile Number or Email" required>
             </div>
             <div class="form-element fullname">
-              <input type="text" placeholder="Full Name">
+              <input type="text" placeholder="Full Name" required>
             </div>
             <div class="form-element username">
-              <input type="text" placeholder="Username">
+              <input type="text" placeholder="Username" required>
             </div>
             <div class="form-element password">
-              <input type="text" placeholder="Password">
+              <input type="text" placeholder="Password" required>
             </div>
             <button class="btn-blue">Sign up</button>
+            <div class="error-message"></div>
             <div class="terms">
               <p>By signing up, you agree to our</p><a href="#">Terms</a> & <a href="">Privacy Policy.</a>
             </div>
@@ -67,5 +69,6 @@
   </body>
   <!-- scripts-->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-  <script src="main.js"></script>
+  <script src="js/igslider.js"></script>
+  <script src="js/main.js"></script>
 </html>
