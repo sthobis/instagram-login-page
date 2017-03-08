@@ -1,0 +1,91 @@
+- var title = "Welcome to instagram"
+
+doctype html
+html
+
+  head
+
+    title #{title}
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="description" content="#{title}")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="shortcut icon" type="images/x-icon" href="img/favicon.ico")
+    // stylesheets
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400")
+    link(rel="stylesheet" href="css/main.css")
+
+  body
+
+    div(role="main").content
+
+      section.slideshow
+        .phone
+          .screens
+            img(src="img/screen-1.jpg" alt="screen").screen
+            img(src="img/screen-1.jpg" alt="screen").screen
+
+      section.authentication
+        .box
+          form
+            h1.logo
+            h2.description Sign up to see photos and videos from your friends.
+            button.btn-blue.fb Log in with Facebook
+            .separator
+              span.stripe
+              span.text or
+              span.stripe
+            .form-element.mobile
+              input(type="number" placeholder="Mobile Number or Email")
+            .form-element.fullname
+              input(type="text" placeholder="Full Name")
+            .form-element.username
+              input(type="text" placeholder="Username")
+            .form-element.password
+              input(type="text" placeholder="Password")
+            button.btn-blue Sign up
+            .terms
+              p By signing up, you agree to our
+              a(href="#") Terms
+              |  & 
+              a(href="") Privacy Policy.
+
+        .box
+          | Have an account? 
+          a(href="#") Log in
+
+        .app
+          p Get the app.
+          a(href="#").app-icon
+            img(src="img/ios.png" alt="ios")
+          a(href="#").app-icon
+            img(src="img/android.png" alt="android")
+
+    footer
+      ul.sitemap
+        li
+          a(href="#") About us
+        li
+          a(href="#") Support
+        li
+          a(href="#") Blog
+        li
+          a(href="#") Press
+        li
+          a(href="#") API
+        li
+          a(href="#") Jobs
+        li
+          a(href="#") Privacy
+        li
+          a(href="#") Terms
+        li
+          a(href="#") Directory
+        li
+          a(href="#") Language
+      .copyright
+        © 2017 INSTAGRAM
+
+  // scripts
+  script(src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous")
+  script(src="main.js")
